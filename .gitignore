@@ -1,0 +1,31 @@
+# PHP
+*.log
+php_errors.log
+error_log
+
+# Database
+*.sql.backup
+*.sql.bak
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# XAMPP specific
+.htpasswd
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local configuration (if you have different configs)
+config.local.php
+database/config.local.php

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrae Mamo - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home" id="navbarBrand">
+                <i class="fas fa-code"></i> <span id="brandText">Ibrae</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item" id="guestNav">
+                        <a class="nav-link" href="signin.html">Sign In</a>
+                    </li>
+                    <li class="nav-item" id="guestNav2">
+                        <a class="nav-link" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item d-none" id="userNav">
+                        <span class="navbar-text text-light me-3" id="welcomeMessage">Welcome!</span>
+                        <a class="nav-link d-inline" href="#" onclick="logout()">
+                            <i class="fas fa-sign-out-alt me-1"></i>Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-3">
+                        Hi, I'm <span class="text-primary">Ibrae</span>
+                    </h1>
+                    <h3 class="text-light mb-4">Learning to Code</h3>
+                    <p class="lead text-light mb-4">
+                        Diploma in Information Technology student at Strathmore University. I have an ACCA background but decided to switch to tech. Still learning but excited about coding!
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Get In Touch
+                        </a>
+                        <a href="#projects" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-folder me-2"></i>View Projects
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="profile-image-container">
+                        <img src="images/profile.jpg" alt="Ibrae" class="profile-image img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="mb-3">Computer Science Student</h3>
+                        <p class="mb-4">
+                            I'm currently in my second year pursuing a Diploma in Information Technology at 
+                            Strathmore University. I originally studied for ACCA but realized I was more interested in building 
+                            things with code than working with spreadsheets all day!
+                        </p>
+                        <p class="mb-4">
+                            I went to Nairobi Academy for high school where I was decent at math and science. Now I'm learning 
+                            programming and it's challenging but really fun when things actually work. My goal is to get good 
+                            enough to land a job at a tech company after graduation.
+                        </p>
+                        <div class="stats-container">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h4 class="text-primary">2</h4>
+                                        <p>Years Studying</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h4 class="text-primary">6</h4>
+                                        <p>Class Projects</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-item">
+                                        <h4 class="text-primary">4</h4>
+                                        <p>Languages Learning</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-overview">
+                        <h4 class="mb-3">What I'm Learning</h4>
+                        <div class="skill-item mb-3">
+                            <i class="fas fa-code text-primary me-3"></i>
+                            <div>
+                                <h6>Web Development</h6>
+                                <p class="mb-0 text-muted">HTML, CSS, JavaScript - getting better at making websites</p>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <i class="fas fa-database text-primary me-3"></i>
+                            <div>
+                                <h6>Database Stuff</h6>
+                                <p class="mb-0 text-muted">Learning MySQL and how to store data properly</p>
+                            </div>
+                        </div>
+                        <div class="skill-item mb-3">
+                            <i class="fas fa-mobile-alt text-primary me-3"></i>
+                            <div>
+                                <h6>Programming</h6>
+                                <p class="mb-0 text-muted">PHP and JavaScript - still figuring out the logic part</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line text-primary me-3"></i>
+                            <div>
+                                <h6>Financial Technology</h6>
+                                <p class="mb-0 text-muted">Combining tech skills with financial knowledge</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Diploma in Information Technology</h4>
+                            <h6 class="text-primary">Strathmore University</h6>
+                            <p class="text-muted mb-2">2022 - 2024 (Expected)</p>
+                            <p>Currently pursuing a comprehensive diploma in Information Technology with focus on software engineering, database systems, and web development.</p>
+                            <div class="subjects">
+                                <span class="badge bg-primary me-2">Software Engineering</span>
+                                <span class="badge bg-primary me-2">Database Systems</span>
+                                <span class="badge bg-primary me-2">Web Development</span>
+                                <span class="badge bg-primary">Project Management</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>ACCA Diploma</h4>
+                            <h6 class="text-primary">Association of Chartered Certified Accountants</h6>
+                            <p class="text-muted mb-2">2021 - 2023</p>
+                            <p>Completed professional accounting qualification providing strong foundation in business, finance, and analytical thinking.</p>
+                            <div class="subjects">
+                                <span class="badge bg-success me-2">Financial Accounting</span>
+                                <span class="badge bg-success me-2">Business Analysis</span>
+                                <span class="badge bg-success">Management Accounting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>High School Education</h4>
+                            <h6 class="text-primary">Nairobi Academy</h6>
+                            <p class="text-muted mb-2">2018 - 2021</p>
+                            <p>Completed secondary education with strong performance in mathematics, sciences, and languages, building foundation for analytical and problem-solving skills.</p>
+                            <div class="subjects">
+                                <span class="badge bg-warning me-2">Mathematics</span>
+                                <span class="badge bg-warning me-2">Physics</span>
+                                <span class="badge bg-warning me-2">Chemistry</span>
+                                <span class="badge bg-warning">Computer Studies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4"><i class="fas fa-code text-primary me-2"></i>What I'm Learning</h4>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>HTML/CSS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>JavaScript</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>PHP</span>
+                                <span>35%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" style="width: 35%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>MySQL</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="skill-category">
+                        <h4 class="mb-4"><i class="fas fa-tools text-primary me-2"></i>Tools I Use</h4>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Bootstrap</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-success" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>VS Code</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-success" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>Git/GitHub</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-success" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-progress-item">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>XAMPP</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-success" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="tech-stack text-center">
+                        <h5 class="mb-4">Technologies I Work With</h5>
+                        <div class="tech-icons">
+                            <div class="tech-icon">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-icon">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="tech-icon">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-icon">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="tech-icon">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-icon">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="tech-icon">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="tech-icon">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead">Some of my class assignments and personal practice projects</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+                            <h5>Simple Shopping Site</h5>
+                        </div>
+                        <div class="project-content">
+                            <p class="text-muted">My first attempt at building a website with a shopping cart. Still working on the payment part!</p>
+                            <div class="project-tech mb-3">
+                                <span class="badge bg-primary me-1">HTML</span>
+                                <span class="badge bg-primary me-1">CSS</span>
+                                <span class="badge bg-primary me-1">Bootstrap</span>
+                                <span class="badge bg-primary">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View
+                                </a>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-database fa-3x text-success mb-3"></i>
+                            <h5>Student Info System</h5>
+                        </div>
+                        <div class="project-content">
+                            <p class="text-muted">A class assignment to build a system for storing student data. Learned a lot about databases!</p>
+                            <div class="project-tech mb-3">
+                                <span class="badge bg-success me-1">PHP</span>
+                                <span class="badge bg-success me-1">MySQL</span>
+                                <span class="badge bg-success me-1">HTML</span>
+                                <span class="badge bg-success">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline-success btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View
+                                </a>
+                                <a href="#" class="btn btn-success btn-sm">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-calculator fa-3x text-warning mb-3"></i>
+                            <h5>Basic Calculator</h5>
+                        </div>
+                        <div class="project-content">
+                            <p class="text-muted">A web calculator I built to practice JavaScript. Does basic math and some financial calculations.</p>
+                            <div class="project-tech mb-3">
+                                <span class="badge bg-warning me-1">JavaScript</span>
+                                <span class="badge bg-warning me-1">HTML</span>
+                                <span class="badge bg-warning me-1">CSS</span>
+                                <span class="badge bg-warning">Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline-warning btn-sm me-2">
+                                    <i class="fas fa-eye"></i> View
+                                </a>
+                                <a href="#" class="btn btn-warning btn-sm">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                    <p class="lead">Feel free to reach out if you have any questions or opportunities</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="contact-info">
+                        <h4 class="mb-4">Contact Information</h4>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-envelope text-primary me-3"></i>
+                            <div>
+                                <h6>Email</h6>
+                                <p class="mb-0">ibrae.mamo@strathmore.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-phone text-primary me-3"></i>
+                            <div>
+                                <h6>Phone</h6>
+                                <p class="mb-0">+254 7XX XXX XXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <div>
+                                <h6>Location</h6>
+                                <p class="mb-0">Nairobi, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="contact-item mb-4">
+                            <i class="fas fa-university text-primary me-3"></i>
+                            <div>
+                                <h6>Institution</h6>
+                                <p class="mb-0">Strathmore University</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <h6 class="mb-3">Follow Me</h6>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link me-3">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h4 class="mb-4">Send Me a Message</h4>
+                        <form id="contactForm">
+                            <div id="contactAlert" class="alert d-none" role="alert"></div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactFirstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="contactFirstName" name="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactLastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="contactLastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="contactEmail" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="contactPhone" name="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label">Subject *</label>
+                                <select class="form-select" id="contactSubject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="internship">Internship Inquiry</option>
+                                    <option value="project">Project Discussion</option>
+                                    <option value="general">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label">Message *</label>
+                                <textarea class="form-control" id="contactMessage" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                                    <label class="form-check-label" for="newsletter">
+                                        Subscribe to my newsletter for updates
+                                    </label>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Ibrae. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Built with <i class="fas fa-heart text-danger"></i> using HTML, CSS, and Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
