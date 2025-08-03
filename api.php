@@ -1,8 +1,6 @@
 <?php
 /**
  * Ibrae Portfolio - Unified API Handler
- * Handles all backend operations: Contact Form, Authentication, and User Management
- * Created: August 2, 2025
  */
 
 session_start();
